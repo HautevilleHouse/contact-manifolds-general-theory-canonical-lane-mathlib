@@ -1,0 +1,15 @@
+import canonicalLaneMathlib.AdmissibleClass
+import HautevilleHouse.ContactManifoldsGeneralTheoryCanonicalLaneLean.ContactStructure
+
+namespace HautevilleHouse
+namespace ContactManifoldsGeneralTheoryCanonicalLaneLean
+
+structure AdmittedContactObject where
+  contactPackage : ContactStructurePackage
+  contactStructureClosed : ContactStructureClosed contactPackage
+
+def ContactWitnessClosed (O : AdmittedContactObject) : Prop :=
+  O.contactStructureClosed
+
+end ContactManifoldsGeneralTheoryCanonicalLaneLean
+end HautevilleHouse
